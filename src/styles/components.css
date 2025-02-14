@@ -1,0 +1,9 @@
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1555009393-f20bdb245c4d');
+  background-size: cover;
+  background-position: center;
+}
+
+.staggered-animation-1 { animation-delay: 150ms; }
+.staggered-animation-2 { animation-delay: 300ms; }
+.staggered-animation-3 { animation-delay: 450ms; } 

@@ -1,6 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
+import '../styles/components.css';
 
 // Select a few products to feature on the home page
 const featuredProducts = [
@@ -31,10 +31,7 @@ const featuredProducts = [
 const Home = () => {
   return (
     <div className="container mx-auto p-4 animate-fadeIn">
-      <div 
-        className="bg-cover bg-center h-96 flex items-center justify-center rounded-lg mb-8 transition-transform duration-500 hover:shadow-2xl" 
-        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1555009393-f20bdb245c4d)' }}
-      >
+      <div className="hero-section h-96 flex items-center justify-center rounded-lg mb-8 transition-transform duration-500 hover:shadow-2xl">
         <div className="text-center text-white bg-pink-400 bg-opacity-50 p-8 rounded-lg backdrop-blur-sm transition-all duration-300 hover:bg-opacity-60">
           <h1 className="text-4xl font-bold animate-slideDown">Welcome to Yara's Kids' Corner</h1>
           <p className="text-lg mt-2 animate-slideUp">Discover the best books and toys for your little ones.</p>
@@ -55,8 +52,7 @@ const Home = () => {
           {featuredProducts.map((product, index) => (
             <div 
               key={product.id} 
-              className="animate-slideUp" 
-              style={{ animationDelay: `${index * 150}ms` }}
+              className={`animate-slideUp staggered-animation-${index + 1}`}
             >
               <ProductCard {...product} />
             </div>

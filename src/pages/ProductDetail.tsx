@@ -1,10 +1,9 @@
-import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 const products = [
   // Books
   { id: 1, name: 'Storybook', price: 19.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A beautiful storybook for kids.', category: 'Books' },
-  { id: 2, name: 'Adventure Book', price: 24.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'An exciting adventure book for kids.', category: 'Books' },
+  { id: 2, name: 'Adventure Book', price: 24.99, image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f', description: 'An exciting adventure book for kids.', category: 'Books' },
   { id: 3, name: 'Educational Book', price: 19.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'An educational book for kids.', category: 'Books' },
 
   // Toys
@@ -30,7 +29,8 @@ const products = [
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const product = products.find(p => p.id === parseInt(id));
+  const productId = id ? parseInt(id) : 0;
+  const product = products.find(p => p.id === productId);
 
   if (!product) {
     return (
@@ -39,7 +39,7 @@ const ProductDetail = () => {
           <h2 className="text-2xl font-bold text-gray-700">Product not found</h2>
           <Link 
             to="/products" 
-            className="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
+            className="mt-4 inline-block bg-pink-400 text-white px-6 py-2 rounded-full hover:bg-pink-500 transition-colors"
           >
             Back to Products
           </Link>
@@ -65,7 +65,10 @@ const ProductDetail = () => {
           <p className="text-2xl text-pink-400 font-semibold">${product.price.toFixed(2)}</p>
           <p className="text-gray-600 text-lg">{product.description}</p>
           <div className="pt-6">
-            <button className="w-full md:w-auto bg-pink-400 text-white px-8 py-3 rounded-full hover:bg-pink-500 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <button 
+              className="w-full md:w-auto bg-pink-400 text-white px-8 py-3 rounded-full hover:bg-pink-500 transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              aria-label={`Add ${product.name} to cart`}
+            >
               Add to Cart
             </button>
           </div>
