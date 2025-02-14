@@ -4,27 +4,27 @@ const products = [
   // Books
   { id: 1, name: 'Storybook', price: 19.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A beautiful storybook for kids.', category: 'Books' },
   { id: 2, name: 'Adventure Book', price: 24.99, image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f', description: 'An exciting adventure book for kids.', category: 'Books' },
-  { id: 3, name: 'Educational Book', price: 19.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'An educational book for kids.', category: 'Books' },
+  { id: 3, name: 'Educational Book', price: 19.99, image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b', description: 'An educational book for kids.', category: 'Books' },
 
   // Toys
-  { id: 4, name: 'Toy Car', price: 29.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A fun toy car for kids.', category: 'Toys' },
-  { id: 5, name: 'Building Blocks', price: 14.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'Educational building blocks for kids.', category: 'Toys' },
-  { id: 6, name: 'Puzzle', price: 9.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A fun puzzle for kids to solve.', category: 'Toys' },
+  { id: 4, name: 'Toy Car', price: 29.99, image: 'https://images.unsplash.com/photo-1594787318286-3d835c1d207f', description: 'A fun toy car for kids.', category: 'Toys' },
+  { id: 5, name: 'Building Blocks', price: 14.99, image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b', description: 'Educational building blocks for kids.', category: 'Toys' },
+  { id: 6, name: 'Puzzle', price: 9.99, image: 'https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99', description: 'A fun puzzle for kids to solve.', category: 'Toys' },
 
   // Dolls
-  { id: 7, name: 'Doll', price: 12.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A cute doll for kids.', category: 'Dolls' },
-  { id: 8, name: 'Barbie Doll', price: 29.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A popular Barbie doll for kids.', category: 'Dolls' },
-  { id: 9, name: 'Action Figure', price: 19.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'An action figure for kids.', category: 'Dolls' },
+  { id: 7, name: 'Doll', price: 12.99, image: 'https://images.unsplash.com/photo-1602734846297-9299fc2d4703', description: 'A cute doll for kids.', category: 'Dolls' },
+  { id: 8, name: 'Barbie Doll', price: 29.99, image: 'https://images.unsplash.com/photo-1559535332-db9971090158', description: 'A popular Barbie doll for kids.', category: 'Dolls' },
+  { id: 9, name: 'Action Figure', price: 19.99, image: 'https://images.unsplash.com/photo-1608889476561-6242cfdbf622', description: 'An action figure for kids.', category: 'Dolls' },
 
   // Educational Toys
-  { id: 10, name: 'Science Kit', price: 39.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A science kit for kids to explore.', category: 'Educational Toys' },
-  { id: 11, name: 'Math Puzzle', price: 14.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A math puzzle for kids to solve.', category: 'Educational Toys' },
-  { id: 12, name: 'Language Learning Toy', price: 24.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A language learning toy for kids.', category: 'Educational Toys' },
+  { id: 10, name: 'Science Kit', price: 39.99, image: 'https://images.unsplash.com/photo-1530210124550-912dc1381cb8', description: 'A science kit for kids to explore.', category: 'Educational Toys' },
+  { id: 11, name: 'Math Puzzle', price: 14.99, image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904', description: 'A math puzzle for kids to solve.', category: 'Educational Toys' },
+  { id: 12, name: 'Language Learning Toy', price: 24.99, image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a', description: 'A language learning toy for kids.', category: 'Educational Toys' },
 
   // Art Supplies
-  { id: 13, name: 'Crayons', price: 4.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A set of colorful crayons for kids.', category: 'Art Supplies' },
-  { id: 14, name: 'Paint Set', price: 19.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A set of paints for kids to create.', category: 'Art Supplies' },
-  { id: 15, name: 'Drawing Pad', price: 9.99, image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794', description: 'A drawing pad for kids to draw on.', category: 'Art Supplies' },
+  { id: 13, name: 'Crayons', price: 4.99, image: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634', description: 'A set of colorful crayons for kids.', category: 'Art Supplies' },
+  { id: 14, name: 'Paint Set', price: 19.99, image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f', description: 'A set of paints for kids to create.', category: 'Art Supplies' },
+  { id: 15, name: 'Drawing Pad', price: 9.99, image: 'https://images.unsplash.com/photo-1517842645767-c639042777db', description: 'A drawing pad for kids to draw on.', category: 'Art Supplies' },
 ];
 
 const ProductDetail = () => {

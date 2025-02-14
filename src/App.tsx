@@ -9,6 +9,7 @@ import Checkout from './pages/Checkout';
 const Home = React.lazy(() => import('./pages/Home'));
 const ProductListing = React.lazy(() => import('./pages/ProductListing'));
 const ProductDetail = React.lazy(() => import('./pages/ProductDetail'));
+const Contact = React.lazy(() => import('./pages/Contact'));
 
 const LoadingSpinner = () => (
   <div className="flex items-center justify-center min-h-screen">
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>
       </Layout>
