@@ -1,8 +1,8 @@
-# Kids' Corner E-commerce Store 🧸 🎨
+# Yara's Kids' Corner E-commerce Store 🧸 🎨
 
 ## Overview 🌟
 
-Welcome to Kids' Corner, an online store dedicated to providing the best books 📚 and toys 🎮 for kids. This project is a fully-featured e-commerce web application built using modern web technologies.
+Welcome to Yara's Kids' Corner, an online store dedicated to providing the best books 📚 and toys 🎮 for kids. This project is a fully-featured e-commerce web application built using modern web technologies.
 
 ## Features ✨
 
@@ -103,4 +103,4 @@ For any questions or suggestions, feel free to reach out to us at [contact@kidsc
 
 ---
 
-Made with ❤️ and ☕ by M. ElSakka for the Kids' Corner Team 😻 👶 ✨
+Made with ❤️ and ☕ by M. ElSakka for the Yara's Kids' Corner Team 😻 👶 ✨
