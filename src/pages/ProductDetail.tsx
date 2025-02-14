@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const products = [
   // Books
@@ -33,18 +33,42 @@ const ProductDetail = () => {
   const product = products.find(p => p.id === parseInt(id));
 
   if (!product) {
-    return <div>Product not found</div>;
+    return (
+      <div className="container mx-auto p-4 min-h-[60vh] flex items-center justify-center">
+        <div className="text-center animate-fadeIn">
+          <h2 className="text-2xl font-bold text-gray-700">Product not found</h2>
+          <Link 
+            to="/products" 
+            className="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
+          >
+            Back to Products
+          </Link>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="flex flex-col md:flex-row">
-        <img src={product.image} alt={product.name} className="w-full md:w-1/2 h-64 object-cover rounded-lg" />
-        <div className="md:ml-8 mt-4 md:mt-0">
-          <h1 className="text-3xl font-bold">{product.name}</h1>
-          <p className="text-gray-600 mt-2">${product.price.toFixed(2)}</p>
-          <p className="mt-4">{product.description}</p>
-          <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Add to Cart</button>
+    <div className="container mx-auto p-4 animate-scaleUp">
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="md:w-1/2">
+          <div className="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src={product.image} 
+              alt={product.name} 
+              className="w-full h-[400px] object-cover transition-transform duration-300 hover:scale-105" 
+            />
+          </div>
+        </div>
+        <div className="md:w-1/2 space-y-4">
+          <h1 className="text-4xl font-bold text-gray-800">{product.name}</h1>
+          <p className="text-2xl text-blue-500 font-semibold">${product.price.toFixed(2)}</p>
+          <p className="text-gray-600 text-lg">{product.description}</p>
+          <div className="pt-6">
+            <button className="w-full md:w-auto bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              Add to Cart
+            </button>
+          </div>
         </div>
       </div>
     </div>

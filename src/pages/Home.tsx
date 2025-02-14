@@ -30,27 +30,43 @@ const featuredProducts = [
 
 const Home = () => {
   return (
-    <div className="container mx-auto p-4">
-      <div className="bg-cover bg-center h-96 flex items-center justify-center rounded-lg mb-8" 
-           style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1555009393-f20bdb245c4d)' }}>
-        <div className="text-center text-white bg-black bg-opacity-50 p-8 rounded-lg">
-          <h1 className="text-4xl font-bold">Welcome to Yara's Kids' Corner</h1>
-          <p className="text-lg mt-2">Discover the best books and toys for your little ones.</p>
-          <Link to="/products" className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition-colors">
+    <div className="container mx-auto p-4 animate-fadeIn">
+      <div 
+        className="bg-cover bg-center h-96 flex items-center justify-center rounded-lg mb-8 transition-transform duration-500 hover:shadow-2xl" 
+        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1555009393-f20bdb245c4d)' }}
+      >
+        <div className="text-center text-white bg-black bg-opacity-50 p-8 rounded-lg backdrop-blur-sm transition-all duration-300 hover:bg-opacity-60">
+          <h1 className="text-4xl font-bold animate-slideDown">Welcome to Yara's Kids' Corner</h1>
+          <p className="text-lg mt-2 animate-slideUp">Discover the best books and toys for your little ones.</p>
+          <Link 
+            to="/products" 
+            className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition-all duration-300 hover:transform hover:translate-y-[-2px] hover:shadow-lg animate-fadeIn"
+          >
             Shop Now
           </Link>
         </div>
       </div>
 
-      <div className="mt-12">
-        <h2 className="text-3xl font-bold mb-6 text-center">Featured Products ✨</h2>
+      <div className="mt-12 animate-fadeIn">
+        <h2 className="text-3xl font-bold mb-6 text-center transition-all duration-300 hover:scale-105">
+          Featured Products ✨
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {featuredProducts.map(product => (
-            <ProductCard key={product.id} {...product} />
+          {featuredProducts.map((product, index) => (
+            <div 
+              key={product.id} 
+              className="animate-slideUp" 
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
+              <ProductCard {...product} />
+            </div>
           ))}
         </div>
         <div className="text-center mt-8">
-          <Link to="/products" className="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition-colors">
+          <Link 
+            to="/products" 
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition-all duration-300 hover:transform hover:translate-y-[-2px] hover:shadow-lg"
+          >
             View All Products
           </Link>
         </div>
