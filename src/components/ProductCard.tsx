@@ -18,12 +18,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, name, price, image }) => 
             alt={name} 
             className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110" 
           />
-          <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 hover:opacity-10" />
+          <div className="absolute inset-0 bg-pink-200 opacity-0 transition-opacity duration-300 hover:opacity-10" />
         </div>
       </Link>
       <div className="p-4">
-        <h2 className="text-xl font-semibold transition-colors duration-300 hover:text-blue-500">{name}</h2>
-        <p className="text-gray-600 mt-2 transition-all duration-300">${price.toFixed(2)}</p>
+        <h2 className="text-xl font-semibold transition-colors duration-300 hover:text-pink-400">{name}</h2>
+        <p className="text-pink-500 mt-2 transition-all duration-300">${price.toFixed(2)}</p>
       </div>
     </div>
   );

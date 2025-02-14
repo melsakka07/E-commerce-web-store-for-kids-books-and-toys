@@ -61,11 +61,11 @@ const ProductDetail = () => {
           </div>
         </div>
         <div className="md:w-1/2 space-y-4">
-          <h1 className="text-4xl font-bold text-gray-800">{product.name}</h1>
-          <p className="text-2xl text-blue-500 font-semibold">${product.price.toFixed(2)}</p>
+          <h1 className="text-4xl font-bold text-pink-500">{product.name}</h1>
+          <p className="text-2xl text-pink-400 font-semibold">${product.price.toFixed(2)}</p>
           <p className="text-gray-600 text-lg">{product.description}</p>
           <div className="pt-6">
-            <button className="w-full md:w-auto bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <button className="w-full md:w-auto bg-pink-400 text-white px-8 py-3 rounded-full hover:bg-pink-500 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Add to Cart
             </button>
           </div>

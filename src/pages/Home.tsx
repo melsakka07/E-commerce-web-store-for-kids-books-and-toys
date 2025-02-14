@@ -35,12 +35,12 @@ const Home = () => {
         className="bg-cover bg-center h-96 flex items-center justify-center rounded-lg mb-8 transition-transform duration-500 hover:shadow-2xl" 
         style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1555009393-f20bdb245c4d)' }}
       >
-        <div className="text-center text-white bg-black bg-opacity-50 p-8 rounded-lg backdrop-blur-sm transition-all duration-300 hover:bg-opacity-60">
+        <div className="text-center text-white bg-pink-400 bg-opacity-50 p-8 rounded-lg backdrop-blur-sm transition-all duration-300 hover:bg-opacity-60">
           <h1 className="text-4xl font-bold animate-slideDown">Welcome to Yara's Kids' Corner</h1>
           <p className="text-lg mt-2 animate-slideUp">Discover the best books and toys for your little ones.</p>
           <Link 
             to="/products" 
-            className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition-all duration-300 hover:transform hover:translate-y-[-2px] hover:shadow-lg animate-fadeIn"
+            className="mt-4 inline-block bg-pink-500 hover:bg-pink-600 text-white py-2 px-6 rounded-full transition-all duration-300 hover:transform hover:translate-y-[-2px] hover:shadow-lg animate-fadeIn"
           >
             Shop Now
           </Link>
@@ -48,7 +48,7 @@ const Home = () => {
       </div>
 
       <div className="mt-12 animate-fadeIn">
-        <h2 className="text-3xl font-bold mb-6 text-center transition-all duration-300 hover:scale-105">
+        <h2 className="text-3xl font-bold mb-6 text-center text-pink-500 transition-all duration-300 hover:scale-105">
           Featured Products ✨
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -65,7 +65,7 @@ const Home = () => {
         <div className="text-center mt-8">
           <Link 
             to="/products" 
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition-all duration-300 hover:transform hover:translate-y-[-2px] hover:shadow-lg"
+            className="inline-block bg-pink-400 hover:bg-pink-500 text-white py-2 px-6 rounded-full transition-all duration-300 hover:transform hover:translate-y-[-2px] hover:shadow-lg"
           >
             View All Products
           </Link>

@@ -6,6 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        pink: {
+          50: '#F8E0EA',  // Lightest pink
+          100: '#FACCD9', // Light pink
+          200: '#F78FA9', // Medium-light pink
+          300: '#FE80A2', // Medium pink
+          400: '#EC5182', // Medium-dark pink
+          500: '#B12051', // Dark pink
+        }
+      },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
